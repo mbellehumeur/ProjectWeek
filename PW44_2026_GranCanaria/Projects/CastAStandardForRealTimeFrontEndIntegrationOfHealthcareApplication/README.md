@@ -52,7 +52,11 @@ Standardize  Real-Time Front-End Integration of Healthcare Application
 3. Add a Cast client to slicer with a [AI prompt that generates the client service](https://github.com/mbellehumeur/cast/blob/main/cast-hub-ai-prompt).
    <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/22d11b1b-43fa-48ea-811f-8ac1a00899ac" />
 
-4. Implement events:
+2. Add a Cast client to slicer and trame-slicer with a [AI prompt that generates the client service](https://github.com/mbellehumeur/cast/blob/main/cast-hub-ai-prompt).
+   The client shall work with Slicer and Medplum hubs.
+
+   
+3. Implement events:
    *  patient-open/close
    *  imagingstudy-open/close
    *  annotation-update (measurements,markups,...)
