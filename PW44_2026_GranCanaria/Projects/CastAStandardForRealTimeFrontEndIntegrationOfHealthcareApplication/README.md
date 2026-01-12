@@ -37,14 +37,20 @@ Standardize  Real-Time Front-End Integration of Healthcare Application
 <!-- Describe here WHAT you would like to achieve (what you will have as end result). -->
 
 
-1. Coninue enhancing front-end integration of OHIF, Slicer and trame-slicer.
-2. Enable multi concurrent user workflows with OHIF and/or Slicer.
+1. Continue developing front-end integration of OHIF and Slicer.
+2. Try using the standard FHIRcast pub/sub front-end messaging infrastructure for non-FHIR related data and events.
+3. Enable multi-user workflows with OHIF and Slicer.
 
 
 ## Approach and Plan
 
-1. Add  Cast hub module to Slicer with a [AI prompt that generates the hub](https://github.com/mbellehumeur/cast/blob/main/cast-hub-ai-prompt).
-   <img width="1643" height="1192" alt="image" src="https://github.com/user-attachments/assets/815fb5c3-a5d1-46b3-8167-e9951e0e30f4" />
+1. Add  Cast hub API to Slicer WebServer with a [AI prompt that generates the hub](https://github.com/mbellehumeur/cast/blob/main/cast-hub-ai-prompt).
+   
+   <img width="350" height="360" alt="image" src="https://github.com/user-attachments/assets/8ab0138b-301f-4942-8d74-91e568c1c8fe" />
+   <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/815fb5c3-a5d1-46b3-8167-e9951e0e30f4" />
+
+3. Add a Cast client to slicer with a [AI prompt that generates the client service](https://github.com/mbellehumeur/cast/blob/main/cast-hub-ai-prompt).
+   <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/22d11b1b-43fa-48ea-811f-8ac1a00899ac" />
 
 2. Add a Cast client to slicer and trame-slicer with a [AI prompt that generates the client service](https://github.com/mbellehumeur/cast/blob/main/cast-hub-ai-prompt).
    The client shall work with Slicer and Medplum hubs.
@@ -54,11 +60,18 @@ Standardize  Real-Time Front-End Integration of Healthcare Application
    *  patient-open/close
    *  imagingstudy-open/close
    *  annotation-update (measurements,markups,...)
+   
+   Three users working on the same annotation: <video
+   controls muted
+   src="https://github.com/NA-MIC/ProjectWeek/assets/66890913/8f257f29-fa9c-4319-8c49-4138003eba27](https://github.com/user-attachments/assets/2c3d490c-08c5-4f85-8633-828589a953ce"
+   style="max-height:640px; min-height: 200px">
+ </video>
   
-4. Add a trame-slicer viewport to OHIF with trame-react and configure hanging protocol.
+
+5. Add a trame-slicer viewport to OHIF with trame-react and configure hanging protocol.
     * Have OHIF with trame-slicer hanging protocol open/close studies (PACS with advanced viewer scenario).
 
-5. Have a multi-user session with OHIF and Slicer (tumor board or staff/resident scenario).
+6. Have a multi-user session with OHIF and Slicer (tumor board or attending/resident scenario).
    
 <!-- Describe here HOW you would like to achieve the objectives stated above. -->
 
